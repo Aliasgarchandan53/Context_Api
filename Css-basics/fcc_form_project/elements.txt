@@ -1,0 +1,17 @@
+title :Mental health survey form
+add a p description element
+
+general info :
+name, age , email
+
+dropdown : how will you describe your mental health status to be
+
+2- radio : are you recently diagnosed with any psychological disorders? yes/no
+            are you taking therapy for those ? : yes/no/not diagnosed
+
+checkbox 1: describe your dietary routines
+checkbox 2 : describe your intoxicating habits
+
+textarea for comments
+
+submit button

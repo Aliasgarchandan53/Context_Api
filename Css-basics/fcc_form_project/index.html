@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mental health survey form</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div class="top">
+      <h1 id="title">Mental Health Survey Form</h1>
+      <p id="description">
+        ( We appreciate your contribution in helping us with our research on
+        mental health status of the society. )
+      </p>
+    </div>
+
+    <form action="" id="survey-form">
+      <div class="name" id="txtelement">
+        <label for="name" id="name-label">Name : </label>
+        <input type="text" id="name" placeholder="John.." required />
+      </div>
+      <div class="age" id="txtelement">
+        <label for="age" id="age">Age : </label>
+        <input
+          type="number"
+          id="age"
+          max="75"
+          min="18"
+          placeholder="18"
+          required
+        />
+      </div>
+      <div class="email" id="txtelement">
+        <label for="email" id="email-label">Email : </label>
+        <input type="email" id="email" placeholder="abc@xmail.com" required />
+      </div>
+
+      <div class="status">
+        <label for="status" id="status"
+          >How will you describe your current mental health status ?
+        </label>
+        <div class="statusresult">
+          <select name="status" id="status">
+            <option value="select" id="stats" selected>
+              Select your mental health status.
+            </option>
+            <option value="Great" id="stats">Great</option>
+            <option value="Good" id="stats">Good</option>
+            <option value="Decent" id="stats">Decent</option>
+            <option value="Deteriorating" id="stats">Deteriorating</option>
+            <option value="Depressed" id="stats">Depressed</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="diagnosis">
+        <p id="disorders">Are you diagnosed with any psychiatric disorders ?</p>
+        <div class="label">
+          <input type="radio" value="Yes" id="disorder1" name="dis" />
+          <label for="disorder1" id="disorder">Yes</label>
+        </div>
+        <div class="label">
+          <input type="radio" value="No" id="disorder2" name="dis" />
+          <label for="disorder1" id="disorder">No</label>
+        </div>
+      </div>
+
+      <div class="treatment">
+        <p id="treatment">
+          Are you seeking treatment (therapy,medications etc.) from a
+          professional ?
+        </p>
+        <div class="label">
+          <input type="radio" value="Yes" id="treat1" name="treatmt" />
+          <label for="treat1" id="treat">Yes</label>
+        </div>
+        <div class="label">
+          <input type="radio" value="Yes" id="treat2" name="treatmt" />
+          <label for="treat2" id="treat">No</label>
+        </div>
+        <div class="label">
+          <input type="radio" value="Yes" id="treat3" name="treatmt" />
+          <label for="treat3" id="treat">Not yet diagnosed</label>
+        </div>
+      </div>
+
+      <div class="lifestyle">
+        <p id="lifestyle">How will you describe your current lifestyle as ?</p>
+        <div class="label">
+          <input
+            type="checkbox"
+            name="lifestyle"
+            value="Healthy"
+            id="lifestyle1"
+          />
+          <label for="lifestyle1" id="lifst">Healthy</label>
+        </div>
+        <div class="label">
+          <input
+            type="checkbox"
+            name="lifestyle"
+            value="Sedentary"
+            id="lifestyle2"
+          />
+          <label for="lifestyle2" id="lifst">Sedentary</label>
+        </div>
+        <div class="label">
+          <input
+            type="checkbox"
+            name="lifestyle"
+            value="Active"
+            id="lifestyle3"
+          />
+          <label for="lifestyle3" id="lifst">Active</label>
+        </div>
+      </div>
+
+      <div class="stress">
+        <p id="stress_level">How will you describe your stress level ?</p>
+        <div class="label">
+          <input type="checkbox" name="stress" value="low" id="stress1" />
+          <label for="stress1" id="stress1"> Low</label>
+        </div>
+        <div class="label">
+          <input type="checkbox" name="stress" value="moderate" id="stress2" />
+          <label for="stress2" id="stress"> Moderate</label>
+        </div>
+        <div class="label">
+          <input type="checkbox" name="stress" value="high" id="stress3" />
+          <label for="stress3" id="stress"> High</label>
+        </div>
+      </div>
+      <div class="comments">
+        <p id="comments">Additional comments :</p>
+        <textarea name="comments" id="text" cols="50" rows="10" value="text">
+I need help with...</textarea
+        >
+      </div>
+
+      <div class="button">
+        <button type="submit" id="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
